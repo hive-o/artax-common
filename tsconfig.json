@@ -14,7 +14,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@artax-context/source": ["src/index.ts"]
+      "@artax-common/source": ["src/index.ts"]
     }
   },
   "files": [],

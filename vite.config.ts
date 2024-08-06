@@ -2,7 +2,7 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  cacheDir: './node_modules/.vite/artax-context',
+  cacheDir: './node_modules/.vite/artax-common',
   plugins: [nxViteTsPaths()],
 
   root: __dirname,
@@ -13,7 +13,7 @@ export default defineConfig({
   // },
 
   test: {
-    coverage: { provider: 'v8', reportsDirectory: './coverage/artax-context' },
+    coverage: { provider: 'v8', reportsDirectory: './coverage/artax-common' },
     environment: 'node',
     globals: true,
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],

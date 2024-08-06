@@ -1732,9 +1732,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hive-o/artax-context@workspace:.":
+"@hive-o/artax-common@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@hive-o/artax-context@workspace:."
+  resolution: "@hive-o/artax-common@workspace:."
   dependencies:
     "@nx/eslint": "npm:19.5.6"
     "@nx/eslint-plugin": "npm:19.5.6"
