@@ -1,7 +1,6 @@
+import { Navigation } from './navigation';
+
 export interface ArtaxContext {
-  navigations: Record<
-    string,
-    { params: { key: string; value: string }[]; uri: string }
-  >;
+  navigation: Navigation;
   uri: string;
 }
