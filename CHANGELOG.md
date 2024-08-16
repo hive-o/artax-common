@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/hive-o/artax-common/compare/artax-common-v1.0.0...artax-common-v1.1.0) (2024-08-16)
+
+
+### Features
+
+* move nagivation from weber to common ([dea2cab](https://github.com/hive-o/artax-common/commit/dea2cabea730a775c2969e06b44fa69329989310))
+
 # 1.0.0 (2024-08-06)
 
 
