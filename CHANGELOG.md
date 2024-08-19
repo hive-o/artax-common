@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/hive-o/artax-common/compare/artax-common-v1.1.0...artax-common-v1.2.0) (2024-08-19)
+
+
+### Features
+
+* remove navigation as a required parameter ([987383a](https://github.com/hive-o/artax-common/commit/987383a435b2041af0c163d8fc88f3a623cd41e6))
+
 # [1.1.0](https://github.com/hive-o/artax-common/compare/artax-common-v1.0.0...artax-common-v1.1.0) (2024-08-16)
 
 
