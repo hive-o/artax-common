@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/hive-o/artax-common/compare/artax-common-v1.2.0...artax-common-v1.3.0) (2024-08-20)
+
+
+### Features
+
+* add more properties to artax context ([51ae0b9](https://github.com/hive-o/artax-common/commit/51ae0b97f77220158f882ca49d346dfe611fe82a))
+
 # [1.2.0](https://github.com/hive-o/artax-common/compare/artax-common-v1.1.0...artax-common-v1.2.0) (2024-08-19)
 
 
