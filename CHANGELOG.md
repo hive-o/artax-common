@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/hive-o/artax-common/compare/artax-common-v1.4.0...artax-common-v1.4.1) (2024-08-20)
+
+
+### Bug Fixes
+
+* add missing property - uri ([84ce9d8](https://github.com/hive-o/artax-common/commit/84ce9d82563b6f34210cdcd144d4b58318579549))
+
 # [1.4.0](https://github.com/hive-o/artax-common/compare/artax-common-v1.3.0...artax-common-v1.4.0) (2024-08-20)
 
 
