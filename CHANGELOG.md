@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/hive-o/artax-common/compare/artax-common-v1.3.0...artax-common-v1.4.0) (2024-08-20)
+
+
+### Features
+
+* update artax context to use zod validator ([4f18d44](https://github.com/hive-o/artax-common/commit/4f18d446ed883b97dc503b23fbd8ebbee81d5d95))
+
 # [1.3.0](https://github.com/hive-o/artax-common/compare/artax-common-v1.2.0...artax-common-v1.3.0) (2024-08-20)
 
 
