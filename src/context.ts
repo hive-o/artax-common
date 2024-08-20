@@ -7,6 +7,7 @@ export const artaxContext = z.object({
     .default([]),
   payloads: z.array(z.string()).default([]),
   selectors: z.array(z.string()).default([]),
+  uri: z.string().url(),
 });
 
 export type ArtaxContext = z.infer<typeof artaxContext>;
