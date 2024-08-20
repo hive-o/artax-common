@@ -1,9 +1,12 @@
-import { Navigation } from './navigation';
+import { z } from 'zod';
 
-export interface ArtaxContext {
-  depth: number;
-  navigation: Navigation;
-  payloads: string[];
-  selectors: string[];
-  uri: string;
-}
+export const artaxContext = z.object({
+  depth: z.number().default(1),
+  navigation: z
+    .array(z.object({ searchParams: z.any(), url: z.any() }))
+    .default([]),
+  payloads: z.array(z.string()).default([]),
+  selectors: z.array(z.string()).default([]),
+});
+
+export type ArtaxContext = z.infer<typeof artaxContext>;
