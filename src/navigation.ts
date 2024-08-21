@@ -25,14 +25,14 @@ export class Navigation {
   }
 
   public entries() {
-    const list: { searchParams: URLSearchParams; url: URL }[] = [];
+    const list: { searchParams: URLSearchParams; uri: URL }[] = [];
 
     this.registry.forEach(({ domain, protocol, routes }) => {
       const site = `${protocol}//${domain}`;
 
       routes.forEach(({ path, searchParams }) => {
-        const url = new URL(site + path);
-        list.push({ searchParams, url });
+        const uri = new URL(site + path);
+        list.push({ searchParams, uri });
       });
     });
 
@@ -45,37 +45,37 @@ export class Navigation {
     this.registry.forEach(cb);
   }
 
-  public get(url: URL): DomainEntry | undefined {
-    return this.registry.get(url.hostname);
+  public get(uri: URL): DomainEntry | undefined {
+    return this.registry.get(uri.hostname);
   }
 
-  public has(url: URL): boolean {
-    const domain = url.hostname;
-    const path = url.pathname;
+  public has(uri: URL): boolean {
+    const domain = uri.hostname;
+    const path = uri.pathname;
 
     return this.registry.get(domain)?.routes.has(path) ?? false;
   }
 
-  public routes(url: URL) {
-    return this.get(url)?.routes;
+  public routes(uri: URL) {
+    return this.get(uri)?.routes;
   }
 
-  public set(url: URL): DomainEntry {
-    const domain = url.hostname;
-    const path = url.pathname;
+  public set(uri: URL): DomainEntry {
+    const domain = uri.hostname;
+    const path = uri.pathname;
 
     let domainEntry = this.registry.get(domain);
     if (!domainEntry) {
-      domainEntry = { domain, protocol: url.protocol, routes: new Map() };
+      domainEntry = { domain, protocol: uri.protocol, routes: new Map() };
       this.registry.set(domain, domainEntry);
     }
 
     let route_entry = domainEntry.routes.get(path);
     if (!route_entry) {
-      route_entry = { path, searchParams: url.searchParams };
+      route_entry = { path, searchParams: uri.searchParams };
       domainEntry.routes.set(path, route_entry);
     } else {
-      url.searchParams.forEach((value, key) => {
+      uri.searchParams.forEach((value, key) => {
         route_entry?.searchParams.set(key, value);
       });
     }
