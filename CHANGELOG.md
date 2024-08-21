@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/hive-o/artax-common/compare/artax-common-v1.4.1...artax-common-v1.5.0) (2024-08-21)
+
+
+### Features
+
+* refactor url to uri ([eccb6cb](https://github.com/hive-o/artax-common/commit/eccb6cb4b77a76d2491ec8e46eb30fdb11a302a2))
+
 ## [1.4.1](https://github.com/hive-o/artax-common/compare/artax-common-v1.4.0...artax-common-v1.4.1) (2024-08-20)
 
 
